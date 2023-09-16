@@ -9,4 +9,5 @@ CS/IS 211 is designed to provide a thorough coverage of data structures with dat
 ## Installation
 
 You will need XCode for Mac to run hw assignments for CS 211
+
 You will need IntelliJ to run hw assignments for CS 130
