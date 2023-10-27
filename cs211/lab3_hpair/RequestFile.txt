@@ -1,0 +1,6 @@
+Toronto, Washington
+Tampa, Ponce
+Paris, Moscow
+Chicago, San Diego
+Chicago, Albuquerque
+Albuquerque, Chicago
