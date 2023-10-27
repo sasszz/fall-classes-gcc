@@ -1,14 +1,14 @@
 #ifndef RADIX_CPP
 #define RADIX_CPP
 
-#include <cmath>
-
-#include "sortSupport.h"
+//#include "sortSupport.h"
 #include "Node.h"
 #include "radix.h"
 
+#include <cmath>
+
 template <class ItemType>
-void radixSort(ItemType theArray[], int n, int d)
+void radixSort(ItemType theArray[], int n, int d, int &numSwaps)
 {
 	Node<ItemType>* bucket[10];
 	Node<ItemType>* bucketEnd[10];
@@ -37,6 +37,7 @@ void radixSort(ItemType theArray[], int n, int d)
 			{
 				bucketEnd[k]->setNext(newNode);
 				bucketEnd[k] = newNode;
+                numSwaps++;
 			}
 		}
 

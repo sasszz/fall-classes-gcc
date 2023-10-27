@@ -1,4 +1,4 @@
-#include "mergesort.h"
+#include "mergeSort.h"
 #include "sortSupport.h"
 
 #ifndef MERGESORT_CPP
@@ -9,7 +9,7 @@
 
 template<class ItemType>
 
-void merge(ItemType theArray[], int first, int mid, int last)
+void merge(ItemType theArray[], int first, int mid, int last, int &numSwaps)
 {
     ItemType tempArray[MAX_SIZE];
     
@@ -30,6 +30,7 @@ void merge(ItemType theArray[], int first, int mid, int last)
         {
             tempArray[index] = theArray[first2];
             first2++;
+            numSwaps++;
         }
         index++;
     }
@@ -55,17 +56,17 @@ void merge(ItemType theArray[], int first, int mid, int last)
 
 
 template<class ItemType>
-void mergeSort(ItemType theArray[], int first, int last)
+void mergeSort(ItemType theArray[], int first, int last, int &numSwaps)
 {
     if (first < last)
     {
         int mid = first + (last - first) / 2; // Index of midpoint
         
-        mergeSort(theArray, first, mid);
+        mergeSort(theArray, first, mid, numSwaps);
         
-        mergeSort(theArray, mid + 1, last);
+        mergeSort(theArray, mid + 1, last, numSwaps);
         
-        merge(theArray, first, mid, last);
+        merge(theArray, first, mid, last, numSwaps);
     }
 }
 #endif

@@ -4,4 +4,5 @@
 template <class ItemType>
 void radixSort(ItemType theArray[], int n, int d);
 
+#include "radix.cpp"
 #endif

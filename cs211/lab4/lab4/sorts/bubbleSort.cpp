@@ -7,7 +7,7 @@ using namespace std;
 
 template<class ItemType>
 
-void bubbleSort(ItemType theArray[], int n)
+void bubbleSort(ItemType theArray[], int n, int &numSwaps)
 {
 	bool sorted = false;
 	int pass = 1;
@@ -21,6 +21,7 @@ void bubbleSort(ItemType theArray[], int n)
 			{
 				swap(theArray[index], theArray[nextIndex]);
 				sorted = false;
+                numSwaps++;
 			}
 		}
 		pass++;

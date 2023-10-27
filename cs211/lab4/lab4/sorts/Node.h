@@ -17,4 +17,5 @@ public:
     Node<ItemType>* getNext() const;
 };
 
+#include "node.cpp"
 #endif

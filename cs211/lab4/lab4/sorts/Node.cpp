@@ -1,3 +1,6 @@
+#ifndef _NODE_CPP
+#define _NODE_CPP
+
 #include "Node.h"
 
 template<class ItemType>
@@ -41,3 +44,5 @@ Node<ItemType>* Node<ItemType>::getNext() const
 {
     return next;
 }
+
+#endif
