@@ -35,9 +35,13 @@ int main() {
     stack1.push(1);
     stack1.push(2);
     stack1.push(3);
-
     stack2.push(4);
     stack2.push(5);
+    stack2.push(6);
+    stack2.push(7);
+    stack2.push(8);
+    stack2.push(9);
+    stack2.push(10);
 
     // Shuffle the elements into the result stack
     shuffle(stack1, stack2, resultStack);
