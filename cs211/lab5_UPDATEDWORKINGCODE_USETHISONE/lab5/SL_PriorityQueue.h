@@ -1,11 +1,11 @@
-/** ADT priority queue: ADT sorted list implementation.
-@file SL_PriorityQueue.h */
+
 #ifndef SL_PRIORITY_QUEUE
 #define SL_PRIORITY_QUEUE
 #include "PriorityQueueInterface.h"
 #include "LinkedSortedList.h"
 #include "PrecondViolatedExcep.h"
 template < class ItemType >
+
 class SL_PriorityQueue :public PriorityQueueInterface < ItemType >
 {
 private:
@@ -13,7 +13,7 @@ private:
                                                 // items in the priority queue
 public:
     SL_PriorityQueue();
-    //SL_PriorityQueue(const SL_PriorityQueue & pq);
+    SL_PriorityQueue(const SL_PriorityQueue & pq);
 
     virtual ~SL_PriorityQueue();
     bool isEmpty() const;
@@ -26,6 +26,6 @@ public:
     ItemType peek() const;// throw (PrecondViolatedExcep);
 };                // end SL_PriorityQueue
 
-#include "PriorityQueue.cpp"
+#include "SL_PriorityQueue.cpp"
 
 #endif /* PriorityQueue_h */

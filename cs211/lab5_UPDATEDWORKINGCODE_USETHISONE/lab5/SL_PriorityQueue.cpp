@@ -2,8 +2,7 @@
 @file SL_PriorityQueue.cpp */
 #ifndef _PRIORITY_QUEUE_CPP
 #define _PRIORITY_QUEUE_CPP
-
-#include "PriorityQueue.h"
+#include "SL_PriorityQueue.h"
 
 //  LinkedSortedList < ItemType > *slistPtr;    // Pointer to sorted list of
                             // items in the priority queue

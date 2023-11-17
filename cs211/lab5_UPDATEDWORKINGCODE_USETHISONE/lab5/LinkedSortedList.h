@@ -48,7 +48,7 @@ public:
    int getLength() const;
    bool remove(int position);
    void clear();
-   ItemType getEntry(int position) const throw(PrecondViolatedExcep);
+    ItemType getEntry(int position) const noexcept(false);
 }; // end LinkedSortedList
 
 #include "LinkedSortedList.cpp"

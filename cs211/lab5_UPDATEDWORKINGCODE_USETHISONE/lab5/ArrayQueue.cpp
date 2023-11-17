@@ -1,16 +1,13 @@
-//  Created by Frank M. Carrano and Timothy M. Henry.
-//  Copyright (c) 2017 Pearson Education, Hoboken, New Jersey.
 
-/** ADT queue: Circular array-based implementation.
- Listing 14-5.
- @file ArrayQueue.cpp */
+#ifndef ARRAY_QUEUE_CPP
+#define ARRAY_QUEUE_CPP
 
 #include "ArrayQueue.h"  // Header file
 
 template<class ItemType>
-ArrayQueue<ItemType>::ArrayQueue() : front(0), back(DEFAULT_CAPACITY - 1), count(0)
-{
-} // end default constructor
+ArrayQueue<ItemType>::ArrayQueue() : front(0), back(DEFAULT_CAPACITY - 1), count(0) {
+    // Constructor implementation
+} // No semicolon here
 
 template<class ItemType>
 bool ArrayQueue<ItemType>::isEmpty() const
@@ -49,7 +46,7 @@ bool ArrayQueue<ItemType>::dequeue()
 } // end dequeue
 
 template<class ItemType>
-ItemType ArrayQueue<ItemType>::peekFront() const throw(PrecondViolatedExcep)
+ItemType ArrayQueue<ItemType>::peekFront() const noexcept(false)
 {
    // Enforce precondition
    if (isEmpty())
@@ -59,3 +56,4 @@ ItemType ArrayQueue<ItemType>::peekFront() const throw(PrecondViolatedExcep)
    return items[front];
 } // end peekFront
 // End of implementation file.
+#endif

@@ -29,7 +29,7 @@ public:
    bool dequeue();
    
    /** @throw PrecondViolatedExcep if queue is empty. */
-   ItemType peekFront() const throw(PrecondViolatedExcep);
+    ItemType peekFront() const noexcept(false);
 }; // end ArrayQueue
 #include "ArrayQueue.cpp"
 #endif
