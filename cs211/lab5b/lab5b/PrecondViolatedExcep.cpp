@@ -2,7 +2,11 @@
 //  PrecondViolatedExcep.cpp
 //  lab5b
 //
-//  Created by Lucie Chevreuil on 11/18/23.
-//
 
-#include "PrecondViolatedExcep.hpp"
+#include "PrecondViolatedExcep.h"
+
+PrecondViolatedExcep::PrecondViolatedExcep(const string& message) : logic_error("Precondition Violated Exception: " + message)
+{
+}  // end constructor
+
+// End of implementation file.

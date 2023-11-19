@@ -2,12 +2,20 @@
 //  PrecondViolatedExcep.hpp
 //  lab5b
 //
-//  Created by Lucie Chevreuil on 11/18/23.
-//
 
-#ifndef PrecondViolatedExcep_hpp
-#define PrecondViolatedExcep_hpp
+/** @file  PrecondViolatedExcep.h */
+#ifndef _PRECOND_VIOLATED_EXCEP
+#define _PRECOND_VIOLATED_EXCEP
 
-#include <stdio.h>
+#include <stdexcept>
+#include <string>
 
-#endif /* PrecondViolatedExcep_hpp */
+using namespace std;
+
+class PrecondViolatedExcep : public logic_error
+{
+public:
+    PrecondViolatedExcep(const string& message = "");
+}; // end PrecondViolatedExcep
+
+#endif

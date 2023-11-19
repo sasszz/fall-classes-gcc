@@ -1,2 +1,47 @@
-#  <#Title#>
+#  Lab 5b Directions
+
+Create a program that will used the sorted linked list from chapter 12.
+Create a class called Inventory.
+
+Have the program create a sorted linked list of Inventory, ask for a file,
+open and read in an inventory to put into the sorted linked list then print
+a report.
+
+For example, with data file inventory.txt that has:
+
+5 1.95 Widgets, small
+
+11 2.99 Widgets, big
+
+6 9.99 Gidgets
+ 
+
+The output would be:
+
+Mustang Sally’s electronics store
+
+Product            | Cost per | Quantity | Value on hand
+-------------------|----------|----------|--------------
+Gidgets            | $9.99    | 6        | $59.94
+Widgets, big       | $2.99    | 11       | $32.89
+Widgets, small     | $1.95    | 5        | $9.75
+-------------------|----------|----------|--------------
+Total value        |          |          | $102.58
+
+
+UML Diagram
+  +--------------------------------------------------------+
+  |                        Inventory                       |
+  +--------------------------------------------------------+
+  | - quantity: integer                                    |
+  | - pricePer: double                                     |
+  | - productName: string                                  |
+  +--------------------------------------------------------+
+  | + Inventory(q: integer, pp: double, pn: string)        |
+  | + value(): double                                      |
+  | + operator<<(output: ostream, inv: Inventory): ostream |
+  | + operator==(inv1: Inventory, inv2: Inventory): bool   |
+  | + operator>(inv1: Inventory, inv2: Inventory): bool    |
+  | + operator!=(inv1: Inventory, inv2: Inventory): bool   |
+  +--------------------------------------------------------+
 

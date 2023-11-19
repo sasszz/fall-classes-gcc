@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9B6472932B0983760049FD0F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B6472922B0983760049FD0F /* main.cpp */; };
+		9B64729B2B0983D10049FD0F /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B6472992B0983D10049FD0F /* Inventory.cpp */; };
+		9B6472A02B09948C0049FD0F /* LinkedSortedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B64729E2B09948C0049FD0F /* LinkedSortedList.cpp */; };
+		9B6472A42B099C3A0049FD0F /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B6472A22B099C3A0049FD0F /* Node.cpp */; };
+		9B6472AA2B099DBB0049FD0F /* PrecondViolatedExcep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B6472A82B099DBB0049FD0F /* PrecondViolatedExcep.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,17 @@
 /* Begin PBXFileReference section */
 		9B64728F2B0983760049FD0F /* lab5b */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab5b; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6472922B0983760049FD0F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9B6472992B0983D10049FD0F /* Inventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inventory.cpp; sourceTree = "<group>"; };
+		9B64729A2B0983D10049FD0F /* Inventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
+		9B64729C2B09846C0049FD0F /* directions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = directions.txt; sourceTree = "<group>"; };
+		9B64729D2B0987AA0049FD0F /* inventory.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = inventory.txt; sourceTree = "<group>"; };
+		9B64729E2B09948C0049FD0F /* LinkedSortedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedSortedList.cpp; sourceTree = "<group>"; };
+		9B64729F2B09948C0049FD0F /* LinkedSortedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedSortedList.h; sourceTree = "<group>"; };
+		9B6472A12B099BF80049FD0F /* SortedListInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortedListInterface.h; sourceTree = "<group>"; };
+		9B6472A22B099C3A0049FD0F /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		9B6472A32B099C3A0049FD0F /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		9B6472A82B099DBB0049FD0F /* PrecondViolatedExcep.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrecondViolatedExcep.cpp; sourceTree = "<group>"; };
+		9B6472A92B099DBB0049FD0F /* PrecondViolatedExcep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrecondViolatedExcep.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +56,7 @@
 		9B6472862B0983760049FD0F = {
 			isa = PBXGroup;
 			children = (
+				9B64729D2B0987AA0049FD0F /* inventory.txt */,
 				9B6472912B0983760049FD0F /* lab5b */,
 				9B6472902B0983760049FD0F /* Products */,
 			);
@@ -57,7 +73,17 @@
 		9B6472912B0983760049FD0F /* lab5b */ = {
 			isa = PBXGroup;
 			children = (
+				9B64729C2B09846C0049FD0F /* directions.txt */,
 				9B6472922B0983760049FD0F /* main.cpp */,
+				9B64729A2B0983D10049FD0F /* Inventory.h */,
+				9B64729F2B09948C0049FD0F /* LinkedSortedList.h */,
+				9B6472A32B099C3A0049FD0F /* Node.h */,
+				9B6472A12B099BF80049FD0F /* SortedListInterface.h */,
+				9B6472A92B099DBB0049FD0F /* PrecondViolatedExcep.h */,
+				9B6472992B0983D10049FD0F /* Inventory.cpp */,
+				9B64729E2B09948C0049FD0F /* LinkedSortedList.cpp */,
+				9B6472A22B099C3A0049FD0F /* Node.cpp */,
+				9B6472A82B099DBB0049FD0F /* PrecondViolatedExcep.cpp */,
 			);
 			path = lab5b;
 			sourceTree = "<group>";
@@ -119,7 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6472AA2B099DBB0049FD0F /* PrecondViolatedExcep.cpp in Sources */,
+				9B6472A02B09948C0049FD0F /* LinkedSortedList.cpp in Sources */,
+				9B64729B2B0983D10049FD0F /* Inventory.cpp in Sources */,
 				9B6472932B0983760049FD0F /* main.cpp in Sources */,
+				9B6472A42B099C3A0049FD0F /* Node.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
