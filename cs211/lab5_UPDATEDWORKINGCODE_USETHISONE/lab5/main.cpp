@@ -17,7 +17,7 @@ int main() {
     TacoSimulation tacoSim;
 
     // Specify the input file name
-    string filename = "tacofryinput.txt"; // Change this to your input file name
+    string filename = "blah.txt"; // Change this to your input file name
 
     // Run the simulation
     tacoSim.simulate(filename);

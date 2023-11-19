@@ -49,6 +49,7 @@
 		9B2219552B071DD00059106D /* TacoSimulation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TacoSimulation.cpp; sourceTree = "<group>"; };
 		9B2219562B071DD00059106D /* TacoSimulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TacoSimulation.h; sourceTree = "<group>"; };
 		9B2219582B071E280059106D /* QueueInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueInterface.h; sourceTree = "<group>"; };
+		9B6472852B08832C0049FD0F /* blah.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = blah.txt; sourceTree = "<group>"; };
 		9BF7F73C2B0699AB00C135D1 /* lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab5; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				9B2219392B07039D0059106D /* tacofryinput.txt */,
+				9B6472852B08832C0049FD0F /* blah.txt */,
 				9BF7F73E2B0699AB00C135D1 /* lab5 */,
 				9BF7F73D2B0699AB00C135D1 /* Products */,
 			);
